@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src = "app.js"></script>
+	<link rel = "stylesheet" type = "text/css" href = "theme.css">
+	<link rel = "shortcut icon" href="C:\Ansh\Computer Science\ISM\katana.png">
+	<title>Task Manager</title>
+</head>
+<body ng-app = "taskManager">
+
+	<div >
+		<p>Insert your name: <input type = "text" ng-model = "name"></p>
+		<h1 ng-bind = "name"></h1>
+	</div>
+	<h1>task manager</h1>
+	<button id = "clearBtn" class = "button">Clear Completed Tasks</button>
+	<button id = "insertBtn" class = "button" onclick = "location.href='InsertTask.html'">Insert New Task</button>
+	<div class = "tbl-header" >
+		<table align = "center" cellpadding="0" cellspacing="0" border = "0"> 
+			<thead>
+				<tr>
+					<th></th>
+					<th>Task Name</th>
+					<th>Task Class</th>
+					<th>Status</th>
+					
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div class = "tbl-content" ng-controller="taskDisplayController">
+		<tbody>
+			<table align = "center" cellpadding="0" cellspacing="0" border = "0"> 
+				<tr ng-repeat="task in tasks">
+					<form name = "form" id = "form">
+					<td><button name = "button" class = "{{task.status}}" id = "button" onclick = "changeValue();">Toggle</button></td>
+					<td>{{task.name}}</td>
+					<td>{{task.clazz}}</td>
+					<td id = "{{task.name}}">{{task.status}}</button></td>
+					</form>
+				</tr>
+				
+			</table>
+		</tbody>
+	</div>
+
+</body>
+</html>

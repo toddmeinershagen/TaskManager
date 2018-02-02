@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: linear-gradient(to right, #FF7C00, #FF4500);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+	padding-top: 15px;
+}
+
+h1, p, th, input, .test{
+  animation-name: example;
+  animation-duration: 2s;
+  text-align: center;
+}
+
+.test {
+	font-size: 25px;
+	color: white;
+}
+
+@keyframes example {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+input[type=submit] {
+
+}
+
+input[type=text]{
+	width: 60%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 3px solid #CCC;
+	transition: .9s;
+	outline: none;
+	font-size: 20px;
+}
+
+input[type=text]:focus {
+	border: 3px solid black;
+}
+
+#submitBtn {
+	background-color: #CC0000;
+  border: 2px solid #EE0000;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submitBtn:hover {
+  background-color: white;
+  color: black;
+}

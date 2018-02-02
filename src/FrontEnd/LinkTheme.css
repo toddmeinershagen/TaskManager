@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: linear-gradient(to right, #DA70D6, #5B0082);
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+	font-size: 30px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
+h1, p, th, body{
+  animation-name: example;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+.button {
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 4px;
+	background-color: #f4511e;
+	border: none;
+	color: white;
+	text-align:center;
+	font-size: 24px;
+	padding: 20px;
+	width: 300px;
+	cursor: pointer;
+	margin: 5px;
+	position: relative;
+	left: 130px;
+}
+
+img {
+	position: relative;
+	left: 135px;
+	padding-right: 10px;
+	height: 170px;
+	width: 300px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: .5s;
+}
+
+.button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: .5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+
+#HAC {
+	background-color: #4169E1;
+}
+
+#SLH {
+	background-color: #BDB76B;
+}
+
+#CSP {
+	background-color: #0000CD;
+}
+
+#MKP {
+	background-color: #CD0000;
+}
+
+#YTB {
+	background-color: red;
+}
+
+#WBY {
+	background-color: #009FFF;
+}
+
+#KHA {
+	background-color: #9ACD32;
+}
+
+#UTM {
+	background-color: #C50;
+}
+
+#LEG {
+	background-color: #B22222;
+}
+
+#GRM {
+	background-color: #00BFFF;
+}
+
+#GTH {
+	background-color: black;
+}
+
+#TXD {
+	background-color: #1E90FF;
+}
+
+#GSE {
+	background-color: white;
+	color: black;
+}
+
+
+#GCL {
+	background-color: #32CD32;
+}
+
+
+#GDR {
+	background-color: #FF0;
+	color: black;
+}
+
+
+#GMA {
+	background-color: #1E90FF;
+}
+

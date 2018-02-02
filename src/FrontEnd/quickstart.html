@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <link rel = "stylesheet" type = "text/css" href = "calTheme.css">
+  <link rel = "shortcut icon" href="C:\Ansh\Computer Science\ISM\calendar.png">
+  <title>Calendar</title>
+  </head>
+<body>
+  <div ng-app="">
+    <p>Insert your name: <input type = "text" ng-model = "name"></p>
+    <h1 ng-bind = "name" id = "use"></h1>
+  </div>
+  <h1>Calendar</h1>
+  <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%2333ccff&amp;src=ansh.jain.145%40k12.friscoisd.org&amp;color=%232952A3&amp;ctz=America%2FChicago" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no" id = "cal"></iframe>
+</body>
+</html>
